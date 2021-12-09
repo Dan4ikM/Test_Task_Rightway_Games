@@ -18,6 +18,7 @@ public class OutOfBorderDestructor : MonoBehaviour
     {
         if(!GameAreaHelper.IsInGameplayArea(transform, _representation.bounds))
         {
+            //Тут можно было бы реализовать возврат в пулл
             Destroy(gameObject);
         }
     }

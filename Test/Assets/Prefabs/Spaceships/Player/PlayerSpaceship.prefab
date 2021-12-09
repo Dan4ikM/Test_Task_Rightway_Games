@@ -93,6 +93,8 @@ GameObject:
   - component: {fileID: 6910651213156479314}
   - component: {fileID: 6910651213156479312}
   - component: {fileID: 2540544495500081184}
+  - component: {fileID: 114378782528696678}
+  - component: {fileID: 50979200965308076}
   m_Layer: 0
   m_Name: PlayerSpaceship
   m_TagString: Untagged
@@ -131,6 +133,7 @@ MonoBehaviour:
   _shipController: {fileID: 6910651213156479313}
   _movementSystem: {fileID: 6910651213156479314}
   _weaponSystem: {fileID: 6910651213156479312}
+  _shipData: {fileID: 114378782528696678}
   _battleIdentity: 1
 --- !u!114 &6910651213156479313
 MonoBehaviour:
@@ -199,6 +202,41 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.97, y: 3.35}
   m_EdgeRadius: 0
+--- !u!114 &114378782528696678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6910651213156479279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: beafb4111ac8d104ca7ebf17867ddeb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _points: 0
+  _health: 3
+--- !u!50 &50979200965308076
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6910651213156479279}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 1
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &6910651214060967066
 GameObject:
   m_ObjectHideFlags: 0

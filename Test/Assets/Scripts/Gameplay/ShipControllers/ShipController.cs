@@ -21,8 +21,7 @@ namespace Gameplay.ShipControllers
             ProcessHandling(_spaceship.MovementSystem);
             ProcessFire(_spaceship.WeaponSystem);
         }
-
-
+        
         protected abstract void ProcessHandling(MovementSystem movementSystem);
         protected abstract void ProcessFire(WeaponSystem fireSystem);
     }

@@ -48,7 +48,9 @@ namespace Gameplay.Spawners
             
             while (true)
             {
-                Instantiate(_object, transform.position, transform.rotation, _parent);
+                GameObject spawnShip = Instantiate(_object, transform.position, transform.rotation, _parent);
+                //Подписываем метод игрового менеджера на события смерти каждого врага
+                spawnShip.GetComponent<Spaceships.Spaceship>().OnDie += GameManager.Instance.EnemyDie;
                 yield return new WaitForSeconds(Random.Range(_spawnPeriodRange.x, _spawnPeriodRange.y));
             }
         }

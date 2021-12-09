@@ -19,8 +19,12 @@ namespace Gameplay.Weapons
 
         private bool _readyToFire = true;
         private UnitBattleIdentity _battleIdentity;
-        
-        
+
+        /// <summary>
+        /// Берём значение перезарядки
+        /// </summary>
+        public float Cooldown
+            => _cooldown;
         
         public void Init(UnitBattleIdentity battleIdentity)
         {
@@ -46,5 +50,11 @@ namespace Gameplay.Weapons
             _readyToFire = true;
         }
 
+        /// <summary>
+        /// Метод умножения значения перезарядки на некоторое значение
+        /// </summary>
+        /// <param name="multiplyer">Множитель</param>
+        public void ChangeCooldown(float multiplyer)
+            => _cooldown *= multiplyer;
     }
 }
