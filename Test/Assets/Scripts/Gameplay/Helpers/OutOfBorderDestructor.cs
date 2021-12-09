@@ -9,7 +9,7 @@ public class OutOfBorderDestructor : MonoBehaviour
     [SerializeField]
     private SpriteRenderer _representation;
     
-    void Update()
+    void LateUpdate()
     {
         CheckBorders();
     }

@@ -58,6 +58,9 @@ namespace Gameplay
             player.OnDie += PlayerDeath;
             player.OnChangeHealth += _healthUI.UpdateText;
             player.OnChangeCooldown += weaponsUI.UpdateFireRate;
+
+            player.ApplyHealth(0);
+            UpdatePoints(0);
         }
 
         private void EnableSpawners()

@@ -118,13 +118,32 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 6910651213141950738}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &253999253 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6910651213156479279, guid: db160e65d2bc1c043828d51dfbc352da,
+    type: 3}
+  m_PrefabInstance: {fileID: 6910651213141950738}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &253999254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 253999253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bce56a10b052da146bcfd8a22d018a38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _representation: {fileID: 1100214322}
 --- !u!114 &253999258 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6910651213156479315, guid: db160e65d2bc1c043828d51dfbc352da,
     type: 3}
   m_PrefabInstance: {fileID: 6910651213141950738}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 253999253}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a4b0874c7d3308c4abf1c2bbfda5e8ec, type: 3}
@@ -650,6 +669,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 7139034146379299536}
   m_PrefabAsset: {fileID: 0}
+--- !u!212 &1100214322 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 2352596708668287078, guid: db160e65d2bc1c043828d51dfbc352da,
+    type: 3}
+  m_PrefabInstance: {fileID: 6910651213141950738}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1253632262
 GameObject:
   m_ObjectHideFlags: 0
@@ -922,7 +947,7 @@ Canvas:
   m_GameObject: {fileID: 1652912709}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 1
+  m_RenderMode: 0
   m_Camera: {fileID: 519420031}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -1176,9 +1201,9 @@ MonoBehaviour:
   - {fileID: 7139034146379299537}
   - {fileID: 525058030}
   - {fileID: 475596462}
+  weaponsUI: {fileID: 305906907}
   bonusSpawner: {fileID: 1902521528}
   bonusDropChance: 0.5
-  weaponsUI: {fileID: 305906907}
   player: {fileID: 253999258}
 --- !u!1001 &6910651213141950738
 PrefabInstance:
