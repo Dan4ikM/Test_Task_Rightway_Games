@@ -31,7 +31,6 @@ namespace Gameplay.Weapons
             _battleIdentity = battleIdentity;
         }
         
-        
         public void TriggerFire()
         {
             if (!_readyToFire)

@@ -33,12 +33,12 @@ namespace Gameplay.ShipUI
         /// Метод для обновления значений скорострельности у каждого оружия
         /// </summary>
         /// <param name="weaponsCooldown"></param>
-        public void UpdateFireRate(Dictionary<Weapon, float> weaponsCooldown)
+        public void UpdateFireRate(List<Weapon> weapons)
         {
             int i = 0;
-            foreach (KeyValuePair<Weapon, float> w in weaponsCooldown)
+            foreach (var weapon in weapons)
             {
-                fireRateUIs[i].UpdateText(w.Value, w.Key.name);
+                fireRateUIs[i].UpdateText(weapon.Cooldown, weapon.name);
                 ++i;
             }
         }

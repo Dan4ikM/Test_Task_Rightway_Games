@@ -5,6 +5,7 @@ using Gameplay.Spawners;
 using Gameplay.Data;
 using Gameplay.ShipUI;
 using Gameplay.Spaceships;
+using Gameplay.Weapons;
 
 namespace Gameplay
 {
@@ -50,9 +51,9 @@ namespace Gameplay
 
         private void PlayerSetup()
         {
-            foreach (KeyValuePair<Weapons.Weapon, float> weaponInfo in player.GetWeaponsCooldown())
+            foreach (Weapon weapon in player.GetWeaponsCooldown())
             {
-                weaponsUI.AddNewFireRateUI(weaponInfo.Key.name, weaponInfo.Value);
+                weaponsUI.AddNewFireRateUI(weapon.name, weapon.Cooldown);
             }
 
             player.OnDie += PlayerDeath;

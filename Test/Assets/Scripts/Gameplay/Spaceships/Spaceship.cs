@@ -36,7 +36,7 @@ namespace Gameplay.Spaceships
         /// </summary>
         public event Action<int, Transform> OnDie;
         public event Action<int> OnChangeHealth;
-        public event Action<Dictionary<Weapon,float>> OnChangeCooldown;
+        public event Action<List<Weapon>> OnChangeCooldown;
 
         private void Start()
         {
@@ -92,9 +92,9 @@ namespace Gameplay.Spaceships
         /// Словарь для получения имён оружий и кулдаунов, который можно заменить списком
         /// </summary>
         /// <returns></returns>
-        public Dictionary<Weapon,float> GetWeaponsCooldown()
+        public List<Weapon> GetWeaponsCooldown()
         {
-            return _weaponSystem.GetWeaponsCooldown();
+            return _weaponSystem._weapons;
         }
     }
 }
